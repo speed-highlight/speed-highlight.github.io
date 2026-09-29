@@ -1,0 +1,51 @@
+var e=`/* Multiline FIX
+	Comment */
+/**
+* js doc CHANGED x
+* @param {String} param
+* @return nothing
+*/
+const listener = Deno.listen({ port: 8000 });
+console.log(.8 * 0. * (0.8 * .e8) * 0.e8 * 0x849, 0d0101, 0o987, 8_987_654.1789)
+console?.log(\`http://localhost:\${PORT}/\`.match(/:[0-9]{2,4}^/g));
+// TODO other comment
+for await (const conn of listener) {
+	if (false)
+		break;
+	(async () => {
+		const requests = Deno.serveHttp(conn);
+		for await (const { respondWith } of this.requests.new) {
+			respondWith(new Response('Hello\\
+			 world'));
+		}
+	})();
+}
+function test(test) {
+	let test = () => { console.log(test) };
+	return test;
+}
+export default {
+	jsonData: a > 5,
+	match: /test/g,
+	headers: { 'Content-Type': 'text/html', 'Cache-Control': 'no-cache' },
+	type: \`test
+	\${'test'}hello
+	\${test + 2.5}hello\`,
+	'Hello world': true
+}
+
+{
+	Aw: Class(),
+	AW: 1,
+	A: N + PI + Math.PI,
+	key: 'value1'
+}
+
+class Store extends Map {
+	#hits = 0;
+	static #instances = 0;
+	get ratio() { return this.#hits / Store.#instances / 2 }
+	has(key) { return /^[a-z-]+$/iv.test(key) && !super.has(key) }
+	set(key, value) { return { ...this, [key]: value, default: opt.default, in: opt.in } }
+}
+`;export{e as default};

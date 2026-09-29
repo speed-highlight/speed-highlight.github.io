@@ -1,0 +1,1 @@
+var e=`\x1B[31m`,t=`\x1B[32m`,n=`\x1B[90m`,r=`\x1B[33m`,i=`\x1B[34m`,a=`\x1B[35m`,o=`\x1B[36m`;export{i as blue,o as cyan,n as gray,t as green,a as magenta,e as red,r as yellow};

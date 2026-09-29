@@ -1,0 +1,1 @@
+import{blue as e,cyan as t,gray as n,green as r,magenta as i,red as a,yellow as o}from"./termcolor-ChuGYpNI.js";var s={deleted:a,var:a,err:a,kwd:i,num:o,class:o,cmnt:n,insert:r,str:r,bool:t,type:e,oper:e,section:i,func:e};export{s as default};
