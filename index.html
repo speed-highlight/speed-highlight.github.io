@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://speed-highlight.github.io/">
+	<link rel="canonical" href="https://speed-highlight.github.io/">
+	<!-- the page mode before the first paint, the prerendered page is light -->
+	<script>
+		document.documentElement.classList.toggle('dark', localStorage.getItem('shj-dark')
+			? localStorage.getItem('shj-dark') === '1'
+			: matchMedia('(prefers-color-scheme: dark)').matches);
+	</script>
+	<link href="./_app/immutable/entry/start.C5YdmVK-.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/payload.DSmR2FwN.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/HclGiUj8.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Bw-TiVoa.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DWsbFQTM.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DbZVezX3.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/37lxZDat.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.DrX4NKOc.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.CtIldS5T.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.BrsrgxWI.js" rel="modulepreload">
+		<!--12qhfyh--><meta name="description" content="A tiny, fast, simple syntax highlighter for the web and the terminal in JavaScript"/> <meta property="og:title" content="speed-highlight"/> <meta property="og:description" content="A tiny, fast, simple syntax highlighter for the web and the terminal in JavaScript"/><!----><!--1uha8ag--><!----><style>[class*=shj-lang-]{white-space:pre;color:#112;border:1px solid color-mix(in srgb, currentColor 15%, transparent);text-shadow:none;tab-size:4;box-sizing:border-box;background:#fff;border-radius:.75em;max-width:min(100%,100vw);margin:.625em 0;padding:1.375em;font:1rem/1.625 Consolas,Courier New,Monaco,Andale Mono,Ubuntu Mono,monospace}.shj-inline{border-radius:.3em;margin:0;padding:.1em .3em;font-size:1em;display:inline-block}[class*=shj-lang-]::selection{background:#bdf5}[class*=shj-lang-] ::selection{background:#bdf5}[class*=shj-lang-]>div{display:flex;overflow-x:auto}[class*=shj-lang-]>div :last-child{outline:none;flex:1}.shj-numbers{border-right:1px solid color-mix(in srgb, currentColor 20%, transparent);text-align:right;counter-reset:line;margin-right:.75em;padding-right:.75em}.shj-numbers:empty{display:none}.shj-numbers div:before{color:#999;content:counter(line);opacity:.5;counter-increment:line;min-width:1.5em;display:block}.shj-syn-cmnt{font-style:italic}.shj-syn-err,.shj-syn-kwd{color:#e16}.shj-syn-num,.shj-syn-class{color:#f60}.shj-numbers,.shj-syn-cmnt{color:#999}.shj-syn-insert,.shj-syn-str{color:#7d8}.shj-syn-bool{color:#3bf}.shj-syn-type,.shj-syn-oper{color:#5af}.shj-syn-section,.shj-syn-func{color:#84f}.shj-syn-deleted,.shj-syn-var{color:#f44}</style><!----><!----><title>speed-highlight</title>
+		<link href="./_app/immutable/assets/0.CAYhCeUn.css" rel="stylesheet">
+</head>
+<body>
+	<div style="display: contents"><!--[--><!--[--><!--[0--><!--[--><!--[--><!--[-1--><!--[--><div class="flex min-h-screen flex-col"><header class="sticky top-0 z-40 h-16 shrink-0 border-b border-line bg-card/85 backdrop-blur-md"><div class="mx-auto flex h-full w-full max-w-[1060px] items-center gap-2.5 px-5"><a href="./" class="text-[19px] font-bold tracking-tight text-ink-strong">speed-highlight</a> <nav class="ml-auto flex gap-1"><a class="icon-button" href="https://www.npmjs.com/package/@speed-highlight/core" target="_blank" rel="noopener" aria-label="npm package" title="npm"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-3.456L12.04 19.17H5.113z"></path></svg></a> <a class="icon-button" href="https://github.com/speed-highlight/core" target="_blank" rel="noopener" aria-label="GitHub repository" title="GitHub"><svg width="17" height="17" viewBox="0 0 98 96" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"></path></svg><!----></a> <button class="icon-button cursor-pointer" aria-label="Toggle light or dark mode" title="Toggle theme"><!--[-1--><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg><!--]--></button></nav></div></header> <section><div class="mx-auto max-w-[1060px] px-5 pt-20 pb-14 text-center max-sm:pt-12 max-sm:pb-10"><h1 class="mx-auto max-w-3xl text-[52px]/[1.05] font-bold tracking-[-0.035em] text-balance text-ink-strong max-sm:text-[36px]">speed-highlight</h1> <p class="mx-auto mt-5 max-w-[520px] text-[17px]/[1.6] text-pretty text-ink-dim">A tiny, fast, simple syntax highlighter for the web and the terminal in JavaScript</p> <div class="mt-8 flex flex-wrap items-center justify-center gap-2.5"><a href="https://github.com/speed-highlight/core" target="_blank" rel="noopener" class="flex h-10 items-center gap-2 rounded-lg bg-ink-strong px-4 text-[14px] font-medium text-page transition-opacity hover:opacity-85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"><svg width="16" height="16" viewBox="0 0 98 96" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"></path></svg><!----> Star on GitHub</a> <span class="hero-install flex h-10 items-center gap-2 rounded-lg bg-card pr-1.5 pl-3.5 font-mono text-[13px] text-ink-strong"><span class="text-ink-dim select-none">$</span> <!--[--><!--[0--><span class="shj-lang-bash shj-inline"><!--[--><!----><span class="shj-syn-func">npm</span> i @speed-highlight/core<!----><!--]--></span><!--]--><!--]--><!----> <button type="button" class="flex size-6 shrink-0 cursor-pointer items-center justify-center rounded-md text-ink-dim hover:bg-line/40 hover:text-ink" aria-label="Copy npm i @speed-highlight/core" title="Copy"><!--[-1--><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><!--]--></button><!----></span></div> <dl class="mx-auto mt-11 flex max-w-[620px] flex-wrap items-center justify-center gap-x-9 gap-y-3 text-[13.5px] max-sm:max-w-[300px] max-sm:gap-x-6"><!--[--><div class="flex items-baseline gap-1.5"><dt class="order-2 text-ink-dim">core, gzipped</dt> <dd class="font-semibold text-ink-strong tabular-nums">1.5 kB</dd></div><div class="flex items-baseline gap-1.5"><dt class="order-2 text-ink-dim">languages</dt> <dd class="font-semibold text-ink-strong tabular-nums">34</dd></div><div class="flex items-baseline gap-1.5"><dt class="order-2 text-ink-dim">themes</dt> <dd class="font-semibold text-ink-strong tabular-nums">7</dd></div><div class="flex items-baseline gap-1.5"><dt class="order-2 text-ink-dim">dependencies</dt> <dd class="font-semibold text-ink-strong tabular-nums">0</dd></div><!--]--></dl></div></section> <main class="mx-auto w-full max-w-[1060px] flex-1 px-5 pt-2 pb-10"><section class="overflow-hidden rounded-xl border border-line bg-card" aria-labelledby="usage-title"><div class="flex items-center gap-3 px-3 pt-2.5 max-sm:flex-col max-sm:items-start"><h2 id="usage-title" class="text-[13px] font-semibold text-ink-strong">Use it</h2> <div role="tablist" aria-label="Environment" tabindex="-1" class="thin-scroll -mb-px flex max-w-full items-center overflow-x-auto sm:ml-auto"><!--[--><!--[-1--><!--]--> <button type="button" role="tab" id="tab-html" aria-selected="false" aria-controls="usage-panel" tabindex="-1" class="tab group"><img class="size-4 shrink-0" src="/_app/immutable/assets/html.wqCUmKme.svg" alt=""/> HTML</button><!--[-1--><!--]--> <button type="button" role="tab" id="tab-vite" aria-selected="false" aria-controls="usage-panel" tabindex="-1" class="tab group"><img class="size-4 shrink-0" src="/_app/immutable/assets/vite.Dhh0LDtx.svg" alt=""/> Vite</button><!--[-1--><!--]--> <button type="button" role="tab" id="tab-react" aria-selected="false" aria-controls="usage-panel" tabindex="-1" class="tab group"><img class="size-4 shrink-0" src="/_app/immutable/assets/react.DaYkG7p2.svg" alt=""/> React</button><!--[-1--><!--]--> <button type="button" role="tab" id="tab-vue" aria-selected="false" aria-controls="usage-panel" tabindex="-1" class="tab group"><img class="size-4 shrink-0" src="/_app/immutable/assets/vue.8n6uH9Mo.svg" alt=""/> Vue</button><!--[-1--><!--]--> <button type="button" role="tab" id="tab-svelte" aria-selected="false" aria-controls="usage-panel" tabindex="-1" class="tab group"><img class="size-4 shrink-0" src="/_app/immutable/assets/svelte.DJ0e_MDm.svg" alt=""/> Svelte</button><!--[-1--><!--]--> <button type="button" role="tab" id="tab-angular" aria-selected="false" aria-controls="usage-panel" tabindex="-1" class="tab group"><img class="size-4 shrink-0" src="/_app/immutable/assets/angular.wLNGvo-p.svg" alt=""/> Angular</button><!--[0--><span class="mx-1.5 h-4 w-px shrink-0 bg-line" aria-hidden="true"></span><!--]--> <button type="button" role="tab" id="tab-node" aria-selected="true" aria-controls="usage-panel" tabindex="0" class="tab group"><img class="size-4 shrink-0" src="/_app/immutable/assets/node.D-SqjQDh.svg" alt=""/> Node</button><!--[-1--><!--]--> <button type="button" role="tab" id="tab-deno" aria-selected="false" aria-controls="usage-panel" tabindex="-1" class="tab group"><img class="size-4 shrink-0" src="/_app/immutable/assets/deno.wM-ET9qH.svg" alt=""/> Deno</button><!--]--></div></div> <div id="usage-panel" role="tabpanel" aria-labelledby="tab-node" class="snippets mt-2.5"><!--[--><!--[0--><!--[--><div class="flex h-9 items-center gap-2 border-t border-line px-3 text-[12px] text-ink-dim"><!--[0--><img class="size-3.5 shrink-0" src="/_app/immutable/assets/npm.C37ZMNa1.svg" alt=""/><!--]--> <span class="font-mono text-ink">install</span> <span class="ml-auto flex items-center gap-2"><!----> <!--[0--><button type="button" class="flex size-6 shrink-0 cursor-pointer items-center justify-center rounded-md text-ink-dim hover:bg-line/40 hover:text-ink" aria-label="Copy install" title="Copy"><!--[-1--><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><!--]--></button><!--]--></span></div><!--]--> <!--[--><!--[--><!--[-1--><div class="shj-lang-bash shj-block"><!--[--><!----><div><div class="shj-numbers"></div><div><span class="shj-syn-func">npm</span> i @speed-highlight/core</div></div><!----><!--]--></div><!--]--><!--]--><!--]--><!--]--><!--]--> <!--[--><div class="flex h-9 items-center gap-2 border-t border-line px-3 text-[12px] text-ink-dim"><!--[0--><img class="size-3.5 shrink-0" src="/_app/immutable/assets/js.B1kxcjSx.svg" alt=""/><!--]--> <span class="font-mono text-ink">highlight.js</span> <span class="ml-auto flex items-center gap-2"><!----> <!--[0--><button type="button" class="flex size-6 shrink-0 cursor-pointer items-center justify-center rounded-md text-ink-dim hover:bg-line/40 hover:text-ink" aria-label="Copy highlight.js" title="Copy"><!--[-1--><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><!--]--></button><!--]--></span></div><!----> <div class="relative"><div><!--[--><!--[-1--><div class="shj-lang-js shj-block"><!--[--><!----><div><div class="shj-numbers"></div><div><span class="shj-syn-kwd">import</span> { highlightANSI } <span class="shj-syn-kwd">from</span> <span class="shj-syn-str">'@speed-highlight/core'</span>;
+<span class="shj-syn-kwd">import</span> theme <span class="shj-syn-kwd">from</span> <span class="shj-syn-str">'@speed-highlight/core/themes/default.js'</span>;
+<span class="shj-syn-kwd">import</span> { readFile } <span class="shj-syn-kwd">from</span> <span class="shj-syn-str">'node:fs/promises'</span>;
+
+<span class="shj-syn-cmnt">// the language is the file's extension
+</span><span class="shj-syn-kwd">const</span> file <span class="shj-syn-oper">=</span> process<span class="shj-syn-oper">.</span>argv[<span class="shj-syn-num">2</span>];
+<span class="shj-syn-kwd">const</span> code <span class="shj-syn-oper">=</span> <span class="shj-syn-kwd">await</span> <span class="shj-syn-func">readFile</span>(file<span class="shj-syn-oper">,</span> <span class="shj-syn-str">'utf8'</span>);
+
+console<span class="shj-syn-oper">.</span><span class="shj-syn-func">log</span>(<span class="shj-syn-kwd">await</span> <span class="shj-syn-func">highlightANSI</span>(code<span class="shj-syn-oper">,</span> file<span class="shj-syn-oper">.</span><span class="shj-syn-func">split</span>(<span class="shj-syn-str">'.'</span>)<span class="shj-syn-oper">.</span><span class="shj-syn-func">pop</span>()<span class="shj-syn-oper">,</span> theme));
+</div></div><!----><!--]--></div><!--]--><!--]--><!----></div> <!--[-1--><!--]--></div><!--]--> <!--[--><!--[0--><div class="flex h-9 items-center gap-2 border-t border-line px-3 text-[12px] text-ink-dim"><!--[0--><img class="size-3.5 shrink-0" src="/_app/immutable/assets/shell.D592d34i.svg" alt=""/><!--]--> <span class="font-mono text-ink">terminal</span> <span class="ml-auto flex items-center gap-2"><span class="flex items-center gap-0.5 rounded-md border border-line bg-page p-0.5" role="radiogroup" aria-label="Terminal theme"><!--[--><button type="button" role="radio" aria-checked="true" class="cursor-pointer rounded px-1.5 py-px font-mono text-[11px] text-ink-dim hover:text-ink aria-checked:bg-card aria-checked:text-ink-strong">default</button><button type="button" role="radio" aria-checked="false" class="cursor-pointer rounded px-1.5 py-px font-mono text-[11px] text-ink-dim hover:text-ink aria-checked:bg-card aria-checked:text-ink-strong">atom-dark</button><!--]--></span> <span class="w-12 text-right tabular-nums">7.8 ms</span><!----> <!--[0--><button type="button" class="flex size-6 shrink-0 cursor-pointer items-center justify-center rounded-md text-ink-dim hover:bg-line/40 hover:text-ink" aria-label="Copy terminal" title="Copy"><!--[-1--><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><!--]--></button><!--]--></span></div><!----> <div class="dark thin-scroll max-h-[300px] overflow-auto bg-page px-4 py-3.5 font-mono text-[12.5px]/[21px] whitespace-pre text-ink-strong"><span class="text-ink-dim select-none">$ </span>node highlight.js ../languages/test.js
+<!--[--><!----><span style="color:#7f8494">/* Multiline </span><span style="color:#98c379">FIX</span><span style="color:#7f8494">
+	Comment */</span>
+<span style="color:#7f8494">/**
+* js doc </span><span style="color:#98c379">CHANGED</span><span style="color:#7f8494"> x
+* </span><span style="color:#e06c75">@param</span><span style="color:#7f8494"> </span><span style="color:#61afef">{String}</span><span style="color:#7f8494"> param
+* </span><span style="color:#e06c75">@return</span><span style="color:#7f8494"> nothing
+*/</span>
+<span style="color:#e06c75">const</span> listener <span style="color:#61afef">=</span> <span style="color:#e5c07b">Deno</span><span style="color:#61afef">.</span><span style="color:#c678dd">listen</span>({ port<span style="color:#61afef">:</span> <span style="color:#e5c07b">8000</span> });
+console<span style="color:#61afef">.</span><span style="color:#c678dd">log</span>(<span style="color:#e5c07b">.8</span> <span style="color:#61afef">*</span> <span style="color:#e5c07b">0.</span> <span style="color:#61afef">*</span> (<span style="color:#e5c07b">0.8</span> <span style="color:#61afef">*</span> <span style="color:#e5c07b">.e8</span>) <span style="color:#61afef">*</span> <span style="color:#e5c07b">0.e8</span> <span style="color:#61afef">*</span> <span style="color:#e5c07b">0x849</span><span style="color:#61afef">,</span> <span style="color:#e5c07b">0d0101</span><span style="color:#61afef">,</span> <span style="color:#e5c07b">0o987</span><span style="color:#61afef">,</span> <span style="color:#e5c07b">8_987_654.1789</span>)
+console<span style="color:#61afef">?.</span><span style="color:#c678dd">log</span>(<span style="color:#98c379">`http://localhost:</span><span style="color:#e06c75">${</span><span style="color:#e5c07b">PORT</span><span style="color:#e06c75">}</span><span style="color:#98c379">/`</span><span style="color:#61afef">.</span><span style="color:#c678dd">match</span>(<span style="color:#61afef">/:</span><span style="color:#e5c07b">[0-9]</span><span style="color:#61afef"></span><span style="color:#e06c75">{2,4}</span><span style="color:#61afef"></span><span style="color:#e06c75">^</span><span style="color:#61afef">/</span><span style="color:#e06c75">g</span><span style="color:#61afef"></span>));
+<span style="color:#7f8494">// </span><span style="color:#e06c75">TODO</span><span style="color:#7f8494"> other comment
+</span><span style="color:#e06c75">for</span> <span style="color:#e06c75">await</span> (<span style="color:#e06c75">const</span> conn <span style="color:#e06c75">of</span> listener) {
+	<span style="color:#e06c75">if</span> (<span style="color:#56b6c2">false</span>)
+		<span style="color:#e06c75">break</span>;
+	(<span style="color:#e06c75">async</span> () <span style="color:#e06c75">=&gt;</span> {
+		<span style="color:#e06c75">const</span> requests <span style="color:#61afef">=</span> <span style="color:#e5c07b">Deno</span><span style="color:#61afef">.</span><span style="color:#c678dd">serveHttp</span>(conn);
+		<span style="color:#e06c75">for</span> <span style="color:#e06c75">await</span> (<span style="color:#e06c75">const</span> { respondWith } <span style="color:#e06c75">of</span> <span style="color:#e06c75">this</span><span style="color:#61afef">.</span>requests<span style="color:#61afef">.</span>new) {
+			<span style="color:#c678dd">respondWith</span>(<span style="color:#e06c75">new</span> <span style="color:#e5c07b">Response</span>(<span style="color:#98c379">'Hello\
+			 world'</span>));
+		}
+	})();
+}
+<span style="color:#e06c75">function</span> <span style="color:#c678dd">test</span>(test) {
+	<span style="color:#e06c75">let</span> <span style="color:#c678dd">test</span> <span style="color:#61afef">=</span> () <span style="color:#e06c75">=&gt;</span> { console<span style="color:#61afef">.</span><span style="color:#c678dd">log</span>(test) };
+	<span style="color:#e06c75">return</span> test;
+}
+<span style="color:#e06c75">export</span> <span style="color:#e06c75">default</span> {
+	jsonData<span style="color:#61afef">:</span> a <span style="color:#61afef">&gt;</span> <span style="color:#e5c07b">5</span><span style="color:#61afef">,</span>
+	match<span style="color:#61afef">:</span> <span style="color:#61afef">/test/</span><span style="color:#e06c75">g</span><span style="color:#61afef"></span><span style="color:#61afef">,</span>
+	headers<span style="color:#61afef">:</span> { 'Content-Type'<span style="color:#61afef">:</span> <span style="color:#98c379">'text/html'</span><span style="color:#61afef">,</span> 'Cache-Control'<span style="color:#61afef">:</span> <span style="color:#98c379">'no-cache'</span> }<span style="color:#61afef">,</span>
+	type<span style="color:#61afef">:</span> <span style="color:#98c379">`test
+	</span><span style="color:#e06c75">${</span><span style="color:#98c379">'test'</span><span style="color:#e06c75">}</span><span style="color:#98c379">hello
+	</span><span style="color:#e06c75">${</span>test <span style="color:#61afef">+</span> <span style="color:#e5c07b">2.5</span><span style="color:#e06c75">}</span><span style="color:#98c379">hello`</span><span style="color:#61afef">,</span>
+	'Hello world'<span style="color:#61afef">:</span> <span style="color:#56b6c2">true</span>
+}
+
+{
+	Aw<span style="color:#61afef">:</span> <span style="color:#e5c07b">Class</span>()<span style="color:#61afef">,</span>
+	AW<span style="color:#61afef">:</span> <span style="color:#e5c07b">1</span><span style="color:#61afef">,</span>
+	A<span style="color:#61afef">:</span> <span style="color:#e5c07b">N</span> <span style="color:#61afef">+</span> <span style="color:#e5c07b">PI</span> <span style="color:#61afef">+</span> <span style="color:#e5c07b">Math</span><span style="color:#61afef">.</span><span style="color:#e5c07b">PI</span><span style="color:#61afef">,</span>
+	key<span style="color:#61afef">:</span> <span style="color:#98c379">'value1'</span>
+}
+
+<span style="color:#e06c75">class</span> <span style="color:#e5c07b">Store</span> <span style="color:#e06c75">extends</span> <span style="color:#e5c07b">Map</span> {
+	<span style="color:#e06c75">#hits</span> <span style="color:#61afef">=</span> <span style="color:#e5c07b">0</span>;
+	<span style="color:#e06c75">static</span> <span style="color:#e06c75">#instances</span> <span style="color:#61afef">=</span> <span style="color:#e5c07b">0</span>;
+	<span style="color:#e06c75">get</span> <span style="color:#c678dd">ratio</span>() { <span style="color:#e06c75">return</span> <span style="color:#e06c75">this</span><span style="color:#61afef">.</span><span style="color:#e06c75">#hits</span> <span style="color:#61afef">/</span> <span style="color:#e5c07b">Store</span><span style="color:#61afef">.</span><span style="color:#e06c75">#instances</span> <span style="color:#61afef">/</span> <span style="color:#e5c07b">2</span> }
+	<span style="color:#c678dd">has</span>(key) { <span style="color:#e06c75">return</span> <span style="color:#61afef">/</span><span style="color:#e06c75">^</span><span style="color:#61afef"></span><span style="color:#e5c07b">[a-z-]</span><span style="color:#61afef"></span><span style="color:#e06c75">+</span><span style="color:#61afef"></span><span style="color:#e06c75">$</span><span style="color:#61afef">/</span><span style="color:#e06c75">iv</span><span style="color:#61afef"></span><span style="color:#61afef">.</span><span style="color:#c678dd">test</span>(key) <span style="color:#61afef">&#38;&#38;</span> <span style="color:#61afef">!</span><span style="color:#e06c75">super</span><span style="color:#61afef">.</span><span style="color:#c678dd">has</span>(key) }
+	<span style="color:#e06c75">set</span>(key<span style="color:#61afef">,</span> value) { <span style="color:#e06c75">return</span> { <span style="color:#61afef">...</span><span style="color:#e06c75">this</span><span style="color:#61afef">,</span> [key]<span style="color:#61afef">:</span> value<span style="color:#61afef">,</span> default<span style="color:#61afef">:</span> opt<span style="color:#61afef">.</span>default<span style="color:#61afef">,</span> in<span style="color:#61afef">:</span> opt<span style="color:#61afef">.</span>in } }
+}
+<!----><!--]--></div><!--]--><!--]--></div></section><!----> <div class="flex flex-wrap items-center gap-2 pt-8 pb-1"><div class="relative"><button type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Language: JavaScript" class="picker-button"><img class="size-4 shrink-0" src="/_app/immutable/assets/js.B1kxcjSx.svg" alt=""/> <span class="max-w-36 truncate">JavaScript</span> <!--[-1--><!--]--> <kbd class="ml-0.5 rounded border border-line px-1 font-sans text-[10.5px] leading-4 text-ink-dim max-sm:hidden">/</kbd> <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button> <!--[-1--><!--]--></div><!----> <div class="relative"><button type="button" aria-haspopup="dialog" aria-expanded="false" class="picker-button"><span class="flex shrink-0 flex-col justify-center rounded-md border border-line h-5 w-7 gap-[3px] rounded px-1" style="background: #fff"><!--[--><span class="flex gap-[3px]"><!--[--><i class="rounded-full h-[2px]" style="width: 25%; background: #e16"></i><i class="rounded-full h-[2px]" style="width: 40%; background: #84f"></i><!--]--></span><span class="flex gap-[3px]"><!--[--><i class="rounded-full h-[2px]" style="width: 20%; background: #f60"></i><i class="rounded-full h-[2px]" style="width: 50%; background: #7d8"></i><!--]--></span><span class="flex gap-[3px]"><!--[--><i class="rounded-full h-[2px]" style="width: 40%; background: #999"></i><!--]--></span><!--]--></span><!----> <span class="max-sm:hidden">default</span> <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></button> <!--[-1--><!--]--></div><!----> <span class="ml-auto flex items-center gap-4"><button type="button" role="switch" aria-checked="true" class="group flex cursor-pointer items-center gap-2 text-[13px] text-ink-dim select-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"><span class="h-4 w-7 rounded-full bg-line p-0.5 group-aria-checked:bg-ink-strong"><span class="block size-3 rounded-full bg-page group-aria-checked:translate-x-3"></span></span> Line numbers</button><!----> <span class="w-14 text-right font-mono text-[11.5px] text-ink-dim tabular-nums" title="Time to highlight"></span></span></div> <div class="editor relative overflow-hidden bg-page" style="--caret: #112; --text-x: 0px; --text-y: 0px; --code-size: ; --code-lh: ; --code-pad: "><div class="shj-lang-js shj-block" aria-hidden="true"><!--[--><!----><div><div class="shj-numbers"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div><span class="shj-syn-cmnt">/* Multiline </span><span class="shj-syn-insert">FIX</span><span class="shj-syn-cmnt">
+	Comment */</span>
+<span class="shj-syn-cmnt">/**
+* js doc </span><span class="shj-syn-insert">CHANGED</span><span class="shj-syn-cmnt"> x
+* </span><span class="shj-syn-kwd">@param</span><span class="shj-syn-cmnt"> </span><span class="shj-syn-type">{String}</span><span class="shj-syn-cmnt"> param
+* </span><span class="shj-syn-kwd">@return</span><span class="shj-syn-cmnt"> nothing
+*/</span>
+<span class="shj-syn-kwd">const</span> listener <span class="shj-syn-oper">=</span> <span class="shj-syn-class">Deno</span><span class="shj-syn-oper">.</span><span class="shj-syn-func">listen</span>({ port<span class="shj-syn-oper">:</span> <span class="shj-syn-num">8000</span> });
+console<span class="shj-syn-oper">.</span><span class="shj-syn-func">log</span>(<span class="shj-syn-num">.8</span> <span class="shj-syn-oper">*</span> <span class="shj-syn-num">0.</span> <span class="shj-syn-oper">*</span> (<span class="shj-syn-num">0.8</span> <span class="shj-syn-oper">*</span> <span class="shj-syn-num">.e8</span>) <span class="shj-syn-oper">*</span> <span class="shj-syn-num">0.e8</span> <span class="shj-syn-oper">*</span> <span class="shj-syn-num">0x849</span><span class="shj-syn-oper">,</span> <span class="shj-syn-num">0d0101</span><span class="shj-syn-oper">,</span> <span class="shj-syn-num">0o987</span><span class="shj-syn-oper">,</span> <span class="shj-syn-num">8_987_654.1789</span>)
+console<span class="shj-syn-oper">?.</span><span class="shj-syn-func">log</span>(<span class="shj-syn-str">`http://localhost:</span><span class="shj-syn-kwd">${</span><span class="shj-syn-num">PORT</span><span class="shj-syn-kwd">}</span><span class="shj-syn-str">/`</span><span class="shj-syn-oper">.</span><span class="shj-syn-func">match</span>(<span class="shj-syn-oper">/:</span><span class="shj-syn-num">[0-9]</span><span class="shj-syn-oper"></span><span class="shj-syn-var">{2,4}</span><span class="shj-syn-oper"></span><span class="shj-syn-kwd">^</span><span class="shj-syn-oper">/</span><span class="shj-syn-kwd">g</span><span class="shj-syn-oper"></span>));
+<span class="shj-syn-cmnt">// </span><span class="shj-syn-err">TODO</span><span class="shj-syn-cmnt"> other comment
+</span><span class="shj-syn-kwd">for</span> <span class="shj-syn-kwd">await</span> (<span class="shj-syn-kwd">const</span> conn <span class="shj-syn-kwd">of</span> listener) {
+	<span class="shj-syn-kwd">if</span> (<span class="shj-syn-bool">false</span>)
+		<span class="shj-syn-kwd">break</span>;
+	(<span class="shj-syn-kwd">async</span> () <span class="shj-syn-kwd">=&gt;</span> {
+		<span class="shj-syn-kwd">const</span> requests <span class="shj-syn-oper">=</span> <span class="shj-syn-class">Deno</span><span class="shj-syn-oper">.</span><span class="shj-syn-func">serveHttp</span>(conn);
+		<span class="shj-syn-kwd">for</span> <span class="shj-syn-kwd">await</span> (<span class="shj-syn-kwd">const</span> { respondWith } <span class="shj-syn-kwd">of</span> <span class="shj-syn-kwd">this</span><span class="shj-syn-oper">.</span>requests<span class="shj-syn-oper">.</span>new) {
+			<span class="shj-syn-func">respondWith</span>(<span class="shj-syn-kwd">new</span> <span class="shj-syn-class">Response</span>(<span class="shj-syn-str">'Hello\
+			 world'</span>));
+		}
+	})();
+}
+<span class="shj-syn-kwd">function</span> <span class="shj-syn-func">test</span>(test) {
+	<span class="shj-syn-kwd">let</span> <span class="shj-syn-func">test</span> <span class="shj-syn-oper">=</span> () <span class="shj-syn-kwd">=&gt;</span> { console<span class="shj-syn-oper">.</span><span class="shj-syn-func">log</span>(test) };
+	<span class="shj-syn-kwd">return</span> test;
+}
+<span class="shj-syn-kwd">export</span> <span class="shj-syn-kwd">default</span> {
+	jsonData<span class="shj-syn-oper">:</span> a <span class="shj-syn-oper">&gt;</span> <span class="shj-syn-num">5</span><span class="shj-syn-oper">,</span>
+	match<span class="shj-syn-oper">:</span> <span class="shj-syn-oper">/test/</span><span class="shj-syn-kwd">g</span><span class="shj-syn-oper"></span><span class="shj-syn-oper">,</span>
+	headers<span class="shj-syn-oper">:</span> { 'Content-Type'<span class="shj-syn-oper">:</span> <span class="shj-syn-str">'text/html'</span><span class="shj-syn-oper">,</span> 'Cache-Control'<span class="shj-syn-oper">:</span> <span class="shj-syn-str">'no-cache'</span> }<span class="shj-syn-oper">,</span>
+	type<span class="shj-syn-oper">:</span> <span class="shj-syn-str">`test
+	</span><span class="shj-syn-kwd">${</span><span class="shj-syn-str">'test'</span><span class="shj-syn-kwd">}</span><span class="shj-syn-str">hello
+	</span><span class="shj-syn-kwd">${</span>test <span class="shj-syn-oper">+</span> <span class="shj-syn-num">2.5</span><span class="shj-syn-kwd">}</span><span class="shj-syn-str">hello`</span><span class="shj-syn-oper">,</span>
+	'Hello world'<span class="shj-syn-oper">:</span> <span class="shj-syn-bool">true</span>
+}
+
+{
+	Aw<span class="shj-syn-oper">:</span> <span class="shj-syn-class">Class</span>()<span class="shj-syn-oper">,</span>
+	AW<span class="shj-syn-oper">:</span> <span class="shj-syn-num">1</span><span class="shj-syn-oper">,</span>
+	A<span class="shj-syn-oper">:</span> <span class="shj-syn-num">N</span> <span class="shj-syn-oper">+</span> <span class="shj-syn-num">PI</span> <span class="shj-syn-oper">+</span> <span class="shj-syn-class">Math</span><span class="shj-syn-oper">.</span><span class="shj-syn-num">PI</span><span class="shj-syn-oper">,</span>
+	key<span class="shj-syn-oper">:</span> <span class="shj-syn-str">'value1'</span>
+}
+
+<span class="shj-syn-kwd">class</span> <span class="shj-syn-class">Store</span> <span class="shj-syn-kwd">extends</span> <span class="shj-syn-class">Map</span> {
+	<span class="shj-syn-var">#hits</span> <span class="shj-syn-oper">=</span> <span class="shj-syn-num">0</span>;
+	<span class="shj-syn-kwd">static</span> <span class="shj-syn-var">#instances</span> <span class="shj-syn-oper">=</span> <span class="shj-syn-num">0</span>;
+	<span class="shj-syn-kwd">get</span> <span class="shj-syn-func">ratio</span>() { <span class="shj-syn-kwd">return</span> <span class="shj-syn-kwd">this</span><span class="shj-syn-oper">.</span><span class="shj-syn-var">#hits</span> <span class="shj-syn-oper">/</span> <span class="shj-syn-class">Store</span><span class="shj-syn-oper">.</span><span class="shj-syn-var">#instances</span> <span class="shj-syn-oper">/</span> <span class="shj-syn-num">2</span> }
+	<span class="shj-syn-func">has</span>(key) { <span class="shj-syn-kwd">return</span> <span class="shj-syn-oper">/</span><span class="shj-syn-kwd">^</span><span class="shj-syn-oper"></span><span class="shj-syn-num">[a-z-]</span><span class="shj-syn-oper"></span><span class="shj-syn-var">+</span><span class="shj-syn-oper"></span><span class="shj-syn-kwd">$</span><span class="shj-syn-oper">/</span><span class="shj-syn-kwd">iv</span><span class="shj-syn-oper"></span><span class="shj-syn-oper">.</span><span class="shj-syn-func">test</span>(key) <span class="shj-syn-oper">&#38;&#38;</span> <span class="shj-syn-oper">!</span><span class="shj-syn-kwd">super</span><span class="shj-syn-oper">.</span><span class="shj-syn-func">has</span>(key) }
+	<span class="shj-syn-kwd">set</span>(key<span class="shj-syn-oper">,</span> value) { <span class="shj-syn-kwd">return</span> { <span class="shj-syn-oper">...</span><span class="shj-syn-kwd">this</span><span class="shj-syn-oper">,</span> [key]<span class="shj-syn-oper">:</span> value<span class="shj-syn-oper">,</span> default<span class="shj-syn-oper">:</span> opt<span class="shj-syn-oper">.</span>default<span class="shj-syn-oper">,</span> in<span class="shj-syn-oper">:</span> opt<span class="shj-syn-oper">.</span>in } }
+}
+​</div></div><!----><!--]--></div> <textarea spellcheck="false" autocapitalize="off" autocomplete="off" wrap="off" aria-label="Code editor, the code is highlighted live" class="absolute inset-0 m-0 size-full resize-none overflow-auto border-0 bg-transparent whitespace-pre text-transparent outline-none">/* Multiline FIX
+	Comment */
+/**
+* js doc CHANGED x
+* @param {String} param
+* @return nothing
+*/
+const listener = Deno.listen({ port: 8000 });
+console.log(.8 * 0. * (0.8 * .e8) * 0.e8 * 0x849, 0d0101, 0o987, 8_987_654.1789)
+console?.log(`http://localhost:${PORT}/`.match(/:[0-9]{2,4}^/g));
+// TODO other comment
+for await (const conn of listener) {
+	if (false)
+		break;
+	(async () => {
+		const requests = Deno.serveHttp(conn);
+		for await (const { respondWith } of this.requests.new) {
+			respondWith(new Response('Hello\
+			 world'));
+		}
+	})();
+}
+function test(test) {
+	let test = () => { console.log(test) };
+	return test;
+}
+export default {
+	jsonData: a > 5,
+	match: /test/g,
+	headers: { 'Content-Type': 'text/html', 'Cache-Control': 'no-cache' },
+	type: `test
+	${'test'}hello
+	${test + 2.5}hello`,
+	'Hello world': true
+}
+
+{
+	Aw: Class(),
+	AW: 1,
+	A: N + PI + Math.PI,
+	key: 'value1'
+}
+
+class Store extends Map {
+	#hits = 0;
+	static #instances = 0;
+	get ratio() { return this.#hits / Store.#instances / 2 }
+	has(key) { return /^[a-z-]+$/iv.test(key) &amp;&amp; !super.has(key) }
+	set(key, value) { return { ...this, [key]: value, default: opt.default, in: opt.in } }
+}
+</textarea></div> <!--[-1--><!--]--><!----> <footer class="pt-8 text-[12.5px] text-ink-dim">Icons from <a class="underline hover:text-ink" href="https://github.com/BeardedBear/bearded-icons" target="_blank" rel="noopener">Bearded Icons</a>,
+		Deno logo from <a class="underline hover:text-ink" href="https://simpleicons.org" target="_blank" rel="noopener">Simple Icons</a>.</footer></main></div><!--]--><!--]--><!--]--><!----><!--]--><!--]--><!--]--><!----> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_o9npw1 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						version: "1791209931785"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					import("./_app/immutable/entry/start.C5YdmVK-.js").then(async (kit) => {
+						kit.init(__sveltekit_o9npw1);
+						const app = await import("./_app/immutable/entry/app.DrX4NKOc.js");
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+</body>
+</html>
