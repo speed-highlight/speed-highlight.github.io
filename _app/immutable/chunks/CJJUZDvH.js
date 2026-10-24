@@ -1,0 +1,10 @@
+var e=`git diff
+commit 526
+--- before
++++ after
+@@ -1 +1,2 @@
+# TODO comment
+-hello
++test
+'string'
+"string"`;export{e as default};
