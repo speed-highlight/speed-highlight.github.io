@@ -1,0 +1,73 @@
+var e=`@import "my-styles.css";
+
+p > a,
+.class,
+#id {
+	color: blue;
+	text-decoration: underline;
+}
+/*TODO comment*/
+
+@page :left {
+	color: #2222;
+	margin-left: 4cm;
+	margin-right: 3cm;
+	background: url(test.jpg);
+	color: rgb(5, 5, 5);
+}
+@media print {
+	body { font-size: 10pt }
+}
+
+@layer reset, base;
+@import url("theme.css") layer(base);
+@font-face {
+	font-family: "Custom";
+	src: url("font.woff2") format("woff2");
+	font-weight: 100 900;
+}
+@property --angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
+:root {
+	--primary: oklch(.7 .2 200);
+	--accent: color-mix(in oklch, var(--primary) 80%, #FFF);
+	--gap: clamp(.5rem, 2vw, 1rem);
+}
+
+.card {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+	gap: var(--gap);
+	inset-block-start: -.5rem;
+	transition: scale .3s 10ms;
+	rotate: .25turn;
+
+	&:hover { scale: 1.05 }
+	&::after { content: "" }
+	&[data-variant="ghost"] { background: none !important }
+
+	@media (width >= 768px) {
+		padding: calc(var(--gap) * 2);
+	}
+}
+
+:is(article, section):has(> h2):not(:disabled) {
+	margin-block: 2cqw 1lh;
+}
+@container card (min-width: 400px) {
+	.card-title { font-size: 2vmin }
+}
+@supports (backdrop-filter: blur(10px)) {
+	.glass { backdrop-filter: blur(10px) saturate(180%) }
+}
+@keyframes spin {
+	0% { --angle: 0deg }
+	100% { --angle: 1turn }
+}
+
+.pointer-events-none,
+.overflow-wrap-anywhere`;export{e as default};

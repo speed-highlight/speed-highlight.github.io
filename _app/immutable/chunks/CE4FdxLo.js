@@ -1,0 +1,20 @@
+var e=`--- # The Smiths
+- {name: John Smith, age: 33}
+- name: Mary Smith
+	age: !!str 27
+	e-mail: mary@smith.org
+- [name, age]: [Rae Smith, 4] # sequences as kwds are supported
+--- # TODO People, by gender
+men: ["John Smith", 'Bill Jones', Yes]
+data: >
+	Wrapped text
+	will be folded
+	into a single
+	paragraph
+
+	Blank lines denote
+ 	paragraph breaks
+women:
+	- Mary Smith
+	- Susan Williams
+`;export{e as default};
